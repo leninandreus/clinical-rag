@@ -1,0 +1,22 @@
+#-----datos 
+data/*.csv
+data/vectorstore/
+
+#---------claves y las variables de entonro
+.env
+*.key
+
+#----------entorno virtuales
+.venv/
+venv/
+env/
+
+#------------python
+__pycache__/
+*.py[cod]
+
+#-----------jupyter
+.ipynb_checkpoints/
+
+#-------------sistema
+.DS_Store
