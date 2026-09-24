@@ -2,13 +2,13 @@
 from pathlib import Path
 
 #-------rutas----------
-ROOT = Path(__file__).resolve.parents[1]
+ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT/ "data"
 VECTORSTORE_DIR = ROOT / "data" / "vectorstore"
 
 #---------dataset de medicamentos descargado de kaggle
 #https://www.kaggle.com/datasets/shudhanshusingh/250k-medicines-usage-side-effects-and-substitutes?resource=download
-DATASER_PATH = DATA_DIR / "medicines.csv"
+DATASET_PATH = DATA_DIR / "medicines.csv"
 
 #--------Embeddings---------
 EMBEDDING_MODELO = "all-MiniLM-L6-v2"
