@@ -11,7 +11,9 @@ VECTORSTORE_DIR = ROOT / "data" / "vectorstore"
 DATASET_PATH = DATA_DIR / "medicines.csv"
 
 #--------Embeddings---------
-EMBEDDING_MODELO = "all-MiniLM-L6-v2"
+# EMBEDDING_MODELO = "all-MiniLM-L6-v2"
+EMBEDDING_MODELO = "paraphrase-multilingual-MiniLM-L12-v2"
+COLLECTION_NAME = "medicines"
 
 #documentos a recuperar por consulta
 TOP_K = 4
