@@ -20,8 +20,8 @@ TOP_K = 4
 
 #---------LLMs a comparar
 
-LL_CONFIGS = {
-    "groq":     {"model": "llama-3.3-70b-versatile"},
+LLM_CONFIGS = {
+    "groq":     {"model": "openai/gpt-oss-120b"},
     "gemini":   {"model": "gemini-2.0-flash"},
     "ollama":   {"model": "llama3.2:3b"},
 }
