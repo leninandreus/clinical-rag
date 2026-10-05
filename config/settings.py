@@ -23,7 +23,7 @@ TOP_K = 4
 LLM_CONFIGS = {
     "groq":     {"model": "openai/gpt-oss-120b"},
     "gemini":   {"model": "gemini-3.5-flash-lite"},
-    "ollama":   {"model": "llama3.2:3b"},
+    "ollama":   {"model": "qwen3:8b"},
 }
 
 #------Generación
