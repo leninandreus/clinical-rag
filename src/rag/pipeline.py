@@ -15,14 +15,10 @@ Reglas:
 3. Cita el nombre del medicmaneto en el que basas tu respuesta.
 4. Responde en español, de forma clara y concisa.
 5. No realices diagnósticos ni indiques tratamientos personalizados
-6.  El contexto puede estar escrito en inglés. Debes comprender esa información y responder completamente en español.
 
 Contexto: {contexto}
 Pregunta: {pregunta}
 Respuesta: """
-
-#----el 6 del prompt le añadi para ver si funciona el ollama
-
 
 class RAGPipeline:
 
@@ -42,6 +38,7 @@ class RAGPipeline:
         return {
             "pregunta":pregunta,
             "respuesta": respuesta,
+            "contexto": contexto,
             "fuentes": [r["metadata"]["name"] for r in resultados],
             "modelo": self.llm.name,
         }
